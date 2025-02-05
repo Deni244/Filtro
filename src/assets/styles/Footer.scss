@@ -1,0 +1,103 @@
+@use 'Section2' as a;
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 650px;
+    background-color: #C08267;
+}
+.footer-title {
+    @extend %title-section;
+    margin-top: 38px;
+    width: 100%;
+    color: #FFFADA;
+    &::before,
+    &::after {
+    content: "";
+    margin: 0 36px 5px;
+    background-color: #FFFADA;
+    }
+}
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 163px 0 127px 12px;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+}
+%footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footer-section-1 {
+    @extend %footer-section;
+    color: #FFFFFF;
+    
+}
+.footer-section-2 {
+    @extend %footer-section;
+    margin-left: 132px;
+    color: #FFFFFF;
+}
+.footer-section-3 {
+    @extend %footer-section;
+    margin-left: 113px;
+    color: #FFFADA;
+}
+.footer-section-4 {
+    @extend %footer-section;
+    margin-left: 83px;
+}
+
+
+.footer-section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.footer-links a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+}
+.footer-logo-link-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+    width: 189px;
+}
+.footer-line {
+    height: 4px;
+    width: 94%;
+    background-color: #FFFADA;
+}
+.footer-logo-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 19px;
+    color: white;
+    & img {
+        width: 28.67px;
+        height: 30.67px;
+        margin-right: 14px;
+    }
+    & h1{
+        font-family: "Montserrat", serif;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    & span {
+        font-size: 21px;
+        font-weight: 600;
+        margin-left: 10px;
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+

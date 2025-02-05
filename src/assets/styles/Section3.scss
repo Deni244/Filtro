@@ -1,0 +1,47 @@
+@use 'Section2' as a;
+@mixin brands ($width: 205px, $height: 205px, $marginleft: 5px, $marginTop: 5px ) {
+    width: $width;
+    height: $height;
+    margin-left: $marginleft;
+    margin-top: $marginTop;
+}
+.section-3-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 66px
+}
+.section-3-title {
+    @extend %title-section;
+    width: 98.5%;
+    color: #C08267;
+    &::before,
+    &::after {
+    content: "";
+    margin: 0 27px;
+    background-color: #A0583C;
+    }
+}
+.section-3-brands-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 334px;
+    margin-bottom: 11px;
+}
+.Sturbucks {
+    @include brands (205px, 205px, 70px, 50px );
+}
+.Nescafe {
+    @include brands (291px, 163px, 45px, 72px );
+}
+.TimHortons {
+    @include brands (282px, 282px, 42px, 13px );
+}
+.DunkinDonuts {
+    @include brands (231px, 292px, 42px, 13px );
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
