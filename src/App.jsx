@@ -7,10 +7,10 @@ function App() {
 
   return (
     <>
-    <Router>
+    <Router basename="/Filtro">
       
       <Routes>
-        <Route path="/Filtro" element={<Home />} />
+        <Route path="/" element={<Home />} />
         {/* <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} /> */}
       </Routes>
