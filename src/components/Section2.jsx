@@ -4,7 +4,7 @@ import {ArrayCoffe} from '../ArrayCard';
 import Card from './Card'
 import Section3 from './Section3';
 import '../assets/styles/Section2.scss'
-const cardcoffe = ArrayCoffe.slice(ArrayCoffe.length - 7, ArrayCoffe.length + 1)
+const cardcoffe = ArrayCoffe.slice(ArrayCoffe.length - 6, ArrayCoffe.length + 1)
 
 export default function Section2() {
     

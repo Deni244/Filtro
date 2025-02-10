@@ -7,8 +7,6 @@ import Mocha from '/src/assets/images/coffeCards/Mocha.svg'
 import Raff from '/src/assets/images/coffeCards/Raf.jpg'
 import Ristretto from '/src/assets/images/coffeCards/ristretto.jpg'
 import Doppio from '/src/assets/images/coffeCards/Doppio.jpg'
-console.log(Espresso);
-
 
 export const ArrayCoffe = [
     {   id: '1',

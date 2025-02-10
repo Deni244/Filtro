@@ -1,0 +1,18 @@
+%custom-button {
+    width: 115px;
+    height: 36.8px;
+    background-color: #A0583C;
+    border-radius: 8px;
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    color: #EFEFF5;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+.castom-button-menu {
+    @extend %custom-button;
+}

@@ -19,9 +19,16 @@
     margin: 0 36px 5px;
     background-color: #FFFADA;
     }
+    @media (max-width: 520px) and (min-width: 332px) {
+        font-size: 16px;
+    }
+    @media (max-width: 332px) {
+        font-size: 10px;
+}
 }
 .footer-links {
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
     margin: 163px 0 127px 12px;
     font-family: 'Poppins', sans-serif;
@@ -35,21 +42,42 @@
 .footer-section-1 {
     @extend %footer-section;
     color: #FFFFFF;
+    @media(max-width: 932px){
+        margin-left: 10px;
+    }
     
 }
 .footer-section-2 {
     @extend %footer-section;
     margin-left: 132px;
     color: #FFFFFF;
+    @media(max-width:1175px) and (min-width: 932px){
+        margin-left: 32px;
+    }
+    @media(max-width: 932px){
+        margin-left: 10px;
+    }
 }
 .footer-section-3 {
     @extend %footer-section;
     margin-left: 113px;
     color: #FFFADA;
+    @media(max-width:1175px){
+        margin-left: 32px;
+    }
+    @media(max-width: 932px){
+        margin-left: 10px;
+    }
 }
 .footer-section-4 {
     @extend %footer-section;
     margin-left: 83px;
+    @media(max-width:1175px){
+        margin-left: 32px;
+    }
+    @media(max-width: 932px){
+        margin-left: 10px;
+    }
 }
 
 
@@ -77,6 +105,7 @@
 .footer-logo-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
     margin-top: 19px;
     color: white;
